@@ -167,6 +167,32 @@
         }
       ],
       "id": 5
+    },
+    {
+      "name": "Super Bacon",
+      "toppings": [
+        {
+          "id": 7,
+          "name": "olive"
+        },
+        {
+          "id": 2,
+          "name": "bacon"
+        },
+        {
+          "id": 11,
+          "name": "sweetcorn"
+        },
+        {
+          "id": 9,
+          "name": "pepper"
+        },
+        {
+          "id": 12,
+          "name": "tomato"
+        }
+      ],
+      "id": 6
     }
   ]
 }

@@ -39,8 +39,9 @@ export class ProductItemComponent implements OnInit {
     this.pizza$ = this.store.select(productsStoreModule.getSelectedPizza).pipe(
       tap((pizza: Pizza = null) => {
         const pizzaExists = !!(pizza && pizza.toppings);
-        const pizzaToppingsIds = pizza.toppings.map(topping => topping.id);
-        const toppings = pizzaExists ? pizzaToppingsIds : [];
+        const toppings = pizzaExists
+          ? pizza.toppings.map(topping => topping.id)
+          : [];
 
         this.store.dispatch(
           new productsStoreModule.VisualiseToppings(toppings)
@@ -55,7 +56,9 @@ export class ProductItemComponent implements OnInit {
     this.store.dispatch(new productsStoreModule.VisualiseToppings(event));
   }
 
-  onCreate(event: Pizza) {}
+  onCreate(event: Pizza) {
+    this.store.dispatch(new productsStoreModule.CreatePizza(event));
+  }
 
   onUpdate(event: Pizza) {}
 
