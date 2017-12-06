@@ -3,6 +3,7 @@ import { createSelector } from "@ngrx/store";
 import * as rootStoreModule from "../../../app/store";
 import * as reducersModule from "../reducers";
 import * as pizzasReducerModule from "../reducers/pizzas.reducer";
+import * as toppingsSelectors from "./toppings.selectors";
 import { Pizza } from "../../models/pizza.model";
 
 // Gets the "pizzas" node of the rootState
@@ -39,5 +40,15 @@ export const getSelectedPizza = createSelector(
   rootStoreModule.getRouterState,
   (entities, router): Pizza => {
     return router.state && entities[router.state.params.pizzaId];
+  }
+);
+
+export const getPizzaVisualized = createSelector(
+  getSelectedPizza,
+  toppingsSelectors.getToppingsEntities,
+  toppingsSelectors.getSelectedToppings,
+  (pizza, toppingEntities, selectedToppings) => {
+    const toppings = selectedToppings.map(id => toppingEntities[id]);
+    return { ...pizza, toppings };
   }
 );
