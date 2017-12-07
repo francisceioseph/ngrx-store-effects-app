@@ -1,6 +1,5 @@
 import { Pizza } from "../../models/pizza.model";
 import * as fromPizzas from "../actions/pizzas.action";
-import { createPizzaEntitiesObject } from "./pizzas.reducer.helper";
 
 export interface PizzaState {
   entities: { [id: number]: Pizza };
