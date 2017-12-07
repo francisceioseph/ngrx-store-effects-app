@@ -29,7 +29,15 @@ export function reducer(
 
     case fromPizzas.LOAD_PIZZAS_SUCCESS: {
       const pizzas = action.payload;
-      const entities = createPizzaEntitiesObject(pizzas, state);
+      const entities = pizzas.reduce(
+        (entities: { [id: number]: Pizza }, pizza: Pizza) => {
+          return {
+            ...entities,
+            [pizza.id]: pizza
+          };
+        },
+        { ...state.entities }
+      );
 
       return {
         ...state,
@@ -63,6 +71,10 @@ export function reducer(
     case fromPizzas.DELETE_PIZZA_SUCCESS: {
       const pizza = action.payload;
       const { [pizza.id]: removedPizza, ...entities } = state.entities;
+
+      console.log(action);
+      console.log({ ...state });
+
       return {
         ...state,
         entities

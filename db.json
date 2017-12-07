@@ -51,24 +51,8 @@
   ],
   "pizzas": [
     {
-      "name": "Blazin' Inferno",
+      "name": "Bacon and Pepper",
       "toppings": [
-        {
-          "id": 10,
-          "name": "pepperoni"
-        },
-        {
-          "id": 3,
-          "name": "basil"
-        },
-        {
-          "id": 4,
-          "name": "chili"
-        },
-        {
-          "id": 7,
-          "name": "olive"
-        },
         {
           "id": 2,
           "name": "bacon"
@@ -81,11 +65,11 @@
       "id": 1
     },
     {
-      "name": "Seaside Surfin'",
+      "name": "Super Juice One",
       "toppings": [
         {
-          "id": 7,
-          "name": "olive"
+          "id": 1,
+          "name": "anchovy"
         },
         {
           "id": 2,
@@ -96,99 +80,63 @@
           "name": "basil"
         },
         {
-          "id": 1,
-          "name": "anchovy"
-        },
-        {
-          "id": 8,
-          "name": "onion"
-        },
-        {
-          "id": 11,
-          "name": "sweetcorn"
+          "id": 10,
+          "name": "pepperoni"
         },
         {
           "id": 9,
           "name": "pepper"
         },
         {
-          "id": 5,
-          "name": "mozzarella"
+          "id": 12,
+          "name": "tomato"
         }
       ],
       "id": 2
     },
     {
-      "name": "Plain Ol' Pepperoni",
+      "name": "Plain Tomato",
       "toppings": [
         {
-          "id": 10,
-          "name": "pepperoni"
+          "id": 12,
+          "name": "tomato"
         }
       ],
       "id": 3
     },
     {
-      "name": "Pepperoni with Anchovies",
+      "name": "hungry man",
       "toppings": [
-        {
-          "id": 10,
-          "name": "pepperoni"
-        },
         {
           "id": 1,
           "name": "anchovy"
-        }
-      ],
-      "id": 4
-    },
-    {
-      "name": "Mama Pizza's",
-      "toppings": [
-        {
-          "id": 12,
-          "name": "tomato"
         },
         {
-          "id": 9,
-          "name": "pepper"
-        },
-        {
-          "id": 2,
-          "name": "bacon"
-        },
-        {
-          "id": 7,
-          "name": "olive"
-        }
-      ],
-      "id": 5
-    },
-    {
-      "name": "Super Bacon",
-      "toppings": [
-        {
-          "id": 7,
-          "name": "olive"
-        },
-        {
-          "id": 2,
-          "name": "bacon"
+          "id": 6,
+          "name": "mushroom"
         },
         {
           "id": 11,
           "name": "sweetcorn"
         },
         {
-          "id": 9,
-          "name": "pepper"
+          "id": 4,
+          "name": "chili"
         },
         {
           "id": 12,
           "name": "tomato"
+        },
+        {
+          "id": 9,
+          "name": "pepper"
+        },
+        {
+          "id": 10,
+          "name": "pepperoni"
         }
       ],
-      "id": 6
+      "id": 4
     }
   ]
 }
