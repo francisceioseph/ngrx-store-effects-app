@@ -24,13 +24,13 @@ export const getAllPizzas = createSelector(getPizzasEntities, entities => {
 });
 
 // Gets the pizza's loaded boolean value
-export const getAllPizzasLoaded = createSelector(
+export const getPizzasLoaded = createSelector(
   getPizzaState,
   pizzasReducerModule.getPizzasLoaded
 );
 
 // Gets the pizza's loading boolean value
-export const getAllPizzasLoading = createSelector(
+export const getPizzasLoading = createSelector(
   getPizzaState,
   pizzasReducerModule.getPizzasLoading
 );
